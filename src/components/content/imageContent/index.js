@@ -21,7 +21,7 @@ const ImageContent = () => {
   return (
     <>
       <ImageContentComponent>
-        {images.length && images.map(i => (<Image key={i.blur_hash} data={i} />))}
+        {images.length && images.map(i => (<Image key={i.id} data={i} />))}
       </ImageContentComponent>
       <Button
         color={theme.colors.softPink}
