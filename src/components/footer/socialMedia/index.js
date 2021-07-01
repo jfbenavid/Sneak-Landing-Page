@@ -3,11 +3,11 @@ import { FaFacebookF, FaGoogle, FaTwitter, FaYoutube, FaGithub } from 'react-ico
 
 const SocialMedia = ({ facebook, google, twitter, youtube, gitHub }) => (
   <div>
-    {facebook && <a href={facebook}><FaFacebookF /></a>}
-    {google && <a href={google}><FaGoogle /></a>}
-    {twitter && <a href={twitter}><FaTwitter /></a>}
-    {youtube && <a href={youtube}><FaYoutube /></a>}
-    {gitHub && <a href={gitHub}><FaGithub /></a>}
+    {facebook && <a href={facebook} target='_blank' rel="noreferrer"><FaFacebookF /></a>}
+    {google && <a href={google} target='_blank' rel="noreferrer"><FaGoogle /></a>}
+    {twitter && <a href={twitter} target='_blank' rel="noreferrer"><FaTwitter /></a>}
+    {youtube && <a href={youtube} target='_blank' rel="noreferrer"><FaYoutube /></a>}
+    {gitHub && <a href={gitHub} target='_blank' rel="noreferrer"><FaGithub /></a>}
   </div>
 )
 

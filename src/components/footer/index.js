@@ -4,8 +4,7 @@ import SocialMedia from './socialMedia'
 import { FooterComponent } from './styles'
 
 const social = {
-  gitHub: 'asdf',
-  facebook: 'asdf'
+  gitHub: 'https://github.com/jfbenavid'
 }
 
 const Footer = () => (
