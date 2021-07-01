@@ -6,8 +6,6 @@ import Button from '../../button'
 import Image from './image'
 import { ImageContentComponent } from './styles'
 
-console.log('acces key', process.env.REACT_APP_UNSPLASH_ACCESS_KEY)
-
 const buildImages = async (page) => {
   const response = await unsplashApi.photos.list({ page })
   return response.response?.results
