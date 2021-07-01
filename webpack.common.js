@@ -6,7 +6,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/public/index.html'
     }),
-    new Dotenv()
+    new Dotenv({ systemvars: true })
   ],
   module: {
     rules: [
