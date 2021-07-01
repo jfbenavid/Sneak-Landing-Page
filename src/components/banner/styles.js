@@ -9,6 +9,7 @@ export const SectionComponent = styled.section`
   align-items: center;
   color: ${p => p.theme.colors.background};
   padding: 50px 0;
+  margin-bottom: 25px;
 
   h1 {
     text-transform: uppercase;

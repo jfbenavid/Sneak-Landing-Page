@@ -1,10 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const Dotenv = require('dotenv-webpack')
 
 module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/public/index.html'
-    })
+    }),
+    new Dotenv()
   ],
   module: {
     rules: [
@@ -16,16 +18,7 @@ module.exports = {
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
             plugins: [
-              [
-                'module-resolver',
-                {
-                  alias: {
-                    initialState: './src/state/store/initialState',
-                    portfolio: './src/portfolio',
-                    hooks: './src/util/hooks'
-                  }
-                }
-              ]
+              ['@babel/transform-runtime', { regenerator: true }]
             ]
           }
         }

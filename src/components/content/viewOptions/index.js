@@ -10,7 +10,7 @@ const ViewOptions = () => (
       <FaThLarge />
       <FaBars />
     </ViewsDiv>
-    <Menu withHamburger={false} />
+    <Menu />
   </ViewOptionsComponent>
 )
 
