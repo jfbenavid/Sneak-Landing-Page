@@ -9,4 +9,9 @@ export const ButtonComponent = styled.button`
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: .9em;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .9;
+  }
 `
